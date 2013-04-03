@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace ConsoleApplication1
 {
+	[Serializable]
 	public class Action
 	{
 		public IList<Action> Actions { get; set; }

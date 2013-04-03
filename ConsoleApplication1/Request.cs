@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace ConsoleApplication1
 {
+	[Serializable]
 	public class Request
 	{
 		public Guid Id { get; set; }
@@ -14,5 +15,10 @@ namespace ConsoleApplication1
 		public IList<Action> Actions { get; set; }
 		public DateTime Start { get; set; }
 		public DateTime End { get; set; }
+
+		public Request()
+		{
+			Id = Guid.NewGuid();
+		}
 	}
 }
